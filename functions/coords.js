@@ -1,11 +1,13 @@
 let crdArray = [0, 0];
 
 exports.handler = async (event) => {
-  // const x = await event.queryStringParameters.lat;
-  // const y = await event.queryStringParameters.lng;
+  const x = event.queryStringParameters.lat;
+  const y = event.queryStringParameters.lng;
 
-  crdArray[0] = 2;
-  crdArray[1] = 3;
+  console.log(`x is ${x}; y is ${y}`);
+
+  crdArray[0] = x;
+  crdArray[1] = y;
 
   console.log(JSON.stringify(crdArray));
 
