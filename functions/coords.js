@@ -4,8 +4,8 @@ exports.handler = async (event) => {
   // const x = await event.queryStringParameters.lat;
   // const y = await event.queryStringParameters.lng;
 
-  // crdArray[0] = x;
-  // crdArray[1] = y;
+  crdArray[0] = 2;
+  crdArray[1] = 3;
 
   console.log(JSON.stringify(crdArray));
 
